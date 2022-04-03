@@ -1,8 +1,11 @@
-# PhDThesis
+## PhDThesis
 Contains code and figures to my PhD thesis titled "Barriers to power sector decarbonisation in India".
 Thesis submitted to Technical University of Berlin, November 2021
 
-# Abstract
+## Usage
+The thesis is written in latex and uses Xelatex to make the PDF.
+
+## Abstract
 The role of developing countries like India in climate action has undergone a shift in the last five to ten years. Several factors have led to this development. Firstly, with the signing of the Paris Agreement and its emphasis on bottom-pledges, all countries have become co-enactors to mitigation. Secondly, continued scientific research on co-benefits and climate damages has reduced the gap between mitigation and development priorities. Lastly, capital costs of renewable energy (RE) have plummeted making them cheaper than new coal plants in most countries, thereby providing a solid economic incentive to increase the share of RE. Despite these developments, decarbonisation of the power sector in low-income countries faces significant socio-economic and political barriers. This dissertation identifies some of those barriers, eventually suggesting policy solutions to overcome them. While one publication of this cumulative dissertation % I changed it here
 has a global scope, the other two papers focus on India, a country with low cumulative historic emissions, but is currently the third-largest emitter of greenhouse gases (GHG). Per-capita energy consumption is still low, but it has one of the fastest growing electricity markets in the world. Thus, the policy decisions in the power sector in India can substantially affect the global goal to decarbonisation.
 
