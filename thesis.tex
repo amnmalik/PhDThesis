@@ -1,0 +1,273 @@
+\documentclass[a4paper,twoside,12pt,openright]{book}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel}
+\usepackage[top=25mm,bottom=25mm]{geometry}
+\usepackage[nottoc]{tocbibind}% to get references in toc
+\usepackage{fancyhdr} % Customized header/footer
+\usepackage{txfonts}% For mathfonts to be same as text font
+\usepackage{siunitx}% writing units and numbers
+\usepackage{verbatim} 
+\sisetup{
+detect-weight = true,
+detect-inline-weight = math,
+quotient-mode = fraction}
+\usepackage{setspace} % for line spacing
+\onehalfspacing
+\usepackage{booktabs}
+\usepackage{hyperref}%importing the hyperref package all cross-referenced elements become hyperlinked
+\hypersetup{
+    colorlinks=true,
+    linktocpage=true,%Makes the page numbers instead of the text to be link in the Table of contents. 
+    linkcolor=blue,     
+    urlcolor=cyan,
+    citecolor=blue,
+    %pdfpagemode=FullScreen,
+    pdfauthor=Aman Malik,    
+}
+\usepackage[noabbrev,capitalize]{cleveref} % automatically recognises type of label	
+\usepackage{multirow}
+\urlstyle{same}%Default settings print links in mono-style spaced fonts, this command changes that and displays the links in the same style as the rest of the text. 
+\usepackage{tabularx}
+\usepackage{floatrow}
+\usepackage[margin=10pt,labelfont=bf,font=footnotesize]{caption}
+\counterwithout{figure}{chapter}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{emptypage}
+\graphicspath{{pictures/}}
+\usepackage{float}%alignment of tables 
+
+\usepackage[round,colon,authoryear]{natbib}
+%\usepackage{chapterbib}
+\usepackage{lscape}
+\providecommand{\thesis}{.}
+\def\biblio{\bibliographystyle{chicago}\bibliography{../thesis}} % to allow for bibliography to appear in the subfiles
+%\usepackage{fontspec} % For using times new roman font below	
+%\setmainfont{Times New Roman}
+\usepackage{microtype}%improves the spacing between words and letters, don't know really how it works
+\usepackage{longtable}
+%\newcommand\nomenclature[2]{#1 & #2 \\}
+\usepackage{subfiles}
+\usepackage{pdfpages}
+%
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1ex}
+
+% define height of page header:
+\setlength{\headheight}{14.5pt}
+
+\begin{document}
+\def\biblio{}
+\frontmatter % The pages after this command and before the command \mainmatter, will be numbered with lowercase Roman numerals. 
+
+\pagenumbering{gobble} 
+\selectlanguage{german}
+
+\pagestyle{empty}
+
+%------------------------------------------------------------------------
+% vertical line:
+%------------------------------------------------------------------------
+
+\onecolumn
+
+\begin{comment}
+\hbox{%
+	\hspace*{0.15\textwidth}%
+	\rule{1pt}{.99\textheight}
+	\hspace*{0.05\textwidth}%
+	\parbox[b][.99\textheight]{0.85\textwidth}{%
+		\vspace*{\fill}
+\end{comment}
+
+%------------------------------------------------------------------------
+% Title:
+%------------------------------------------------------------------------
+		\vspace*{\fill}
+		\begin{center}
+		\noindent \Huge% \bfseries
+%{\fontsize{40}{48} \selectfont 
+		Barriers to power sector decarbonisation in India
+%}
+	
+		\vspace*{\fill}
+		\vspace*{\fill}
+		\vspace*{\fill}
+		\vspace*{\fill}
+	\end{center}
+%%------------------------------------------------------------------------
+%% faculty, university, and PhD type:
+%%------------------------------------------------------------------------
+		\begin{center}
+		\Large
+		D I S S E R T A T I O N\\
+			\end{center}
+		\begin{center}
+		\vspace*{\fill}
+		zur Erlangung des akademischen Grades\\
+		Doktor der Naturwissenschaft\\
+		Dr.rer.nat\\[1ex]
+		\vspace*{\fill}
+		eingereicht an der Fakult\"at III -- Prozesswissenschaften\\
+		der Technischen Universit\"at Berlin\\
+		\vspace*{\fill}
+		\end{center}
+%------------------------------------------------------------------------
+% Name, title, and place of birth:
+%------------------------------------------------------------------------
+		\begin{center}
+		vorgelegt von\\
+		Master of Science\\
+		Aman Malik\\
+		geboren in Neu Delhi
+		am 25.09.1991
+		\end{center}
+		\vspace*{\fill}
+
+%
+%%------------------------------------------------------------------------
+%% add this line only AFTER your defense:
+%%------------------------------------------------------------------------
+%	
+%		
+		\vspace*{\fill}
+\vspace*{\fill}
+
+%------------------------------------------------------------------------
+% Names of supervisors and defense chiefs (add only AFTER defense):
+%------------------------------------------------------------------------
+		\begin{flushleft}
+		Promotionsausschuss:
+		
+				
+		\qquad Vositzender: Prof.\ Dr.\ Thomas Brown\\
+		\qquad Gutachter: Prof.\ Dr.\ Gunnar Luderer\\
+		\qquad Gutachter: Prof.\ Dr.\ Jan\ Steckel\\
+
+		
+
+%%------------------------------------------------------------------------
+%% Date of defense (add AFTER defense, of course :) )
+%%------------------------------------------------------------------------
+%		     
+		\end{flushleft}
+		\vspace*{\fill}
+		Tag der wissenschaftlichen Aussprache 29. März 2022
+		\begin{center}
+%%------------------------------------------------------------------------
+%% Date and place:
+%%------------------------------------------------------------------------
+		Berlin\ 2022\\
+%%------------------------------------------------------------------------
+%% library sigil of the university (add only AFTER defense)
+%%------------------------------------------------------------------------
+%		     D\,83 % this is valid for TU Berlin (Zeichen der TU Berlin im Bibliotheksverkehr)
+		\end{center}
+%	}
+%}
+
+
+\selectlanguage{english}
+
+\cleardoublepage
+% Begin TOC Settings
+\pdfbookmark[2]{\contentsname}{toc}
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[RE]{\bfseries \nouppercase{Contents}} %to avoid REFERENCE on fancyhead
+\fancyhead[LO]{\bfseries \nouppercase{Contents}}
+\setcounter{tocdepth}{2} % only show chapters, sections and subsections in TOC
+\tableofcontents
+
+\mainmatter
+
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[RE]{\bfseries Abstract}
+\fancyhead[LO]{\bfseries Abstract}
+\markboth{Abstract}{Abstract}
+\phantomsection
+\addcontentsline{toc}{chapter}{Abstract}
+\subfile{chapters/abstract}
+
+\cleardoublepage
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[RE]{\bfseries Zusammenfassung}
+\fancyhead[LO]{\bfseries Zusammenfassung}
+\selectlanguage{german}
+\markboth{Zusammenfassung}{Zusammenfassung}
+\phantomsection
+\addcontentsline{toc}{chapter}{Zusammenfassung}
+\subfile{chapters/zusammenfassung}
+
+\selectlanguage{english}
+
+
+%%% Begin Fancy Header Settings
+\pagestyle{fancy}                       % Sets fancy header and footer
+\fancyfoot{}                            % Delete current footer settings
+\renewcommand{\chaptermark}[1]{         % Lower Case Chapter marker style   
+  \markboth{\chaptername\ \thechapter\ \hspace{0.5cm} #1}{}}
+\renewcommand{\sectionmark}[1]{         % Lower case Section marker style
+  \markright{\thesection\ \hspace{0.5cm} #1}}         
+%\newcommand{\partmark}[1]{         % Lower Case Part marker style   
+%  \markboth{\thepart\ \hspace{0.5cm} #1}}
+%\renewcommand{\chaptermark}[1]{         % Lower case Chapter marker style
+%  \markright{\chaptername\ \thechapter\ \hspace{0.5cm} #1}}         
+\fancyhead[LE,RO]{\bfseries\thepage}    % Page number (boldface) in left on even pages and right on odd pages
+\fancyhead[RE]{\bfseries\leftmark}      % Part in the right on even pages
+\fancyhead[LO]{\bfseries\rightmark}     % Chapter in the left on odd pages
+\renewcommand{\headrulewidth}{0.3pt}    % Width of head rule %%% Clear Header
+%\addtolength{\headwidth}{0.5\marginparsep} % to be checked
+%\addtolength{\headwidth}{0.5\marginparwidth} % to be checked
+%% End Fancy Header Settings
+
+\fancyhead[LE,RO]{\bfseries\thepage}    % Page number (boldface) in left on even pages and right on odd pages
+%to avoid REFERENCE on fancyhead: \nouppercase
+\fancyhead[RE]{\bfseries\nouppercase{\leftmark}}      % Part in the right on even pages
+\fancyhead[LO]{\bfseries\nouppercase{\rightmark}}     % Chapter in the left on odd pages
+
+\selectlanguage{english}
+
+\subfile{chapters/introduction}
+%\subfile{chapters/methods}
+%\subfile{chapters/objective}
+% from now on: use symbols instead of numeric footnotes
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\subfile{chapters/chapter2}
+\subfile{chapters/chapter3}
+\subfile{chapters/chapter4}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\subfile{chapters/summary}
+
+
+
+\appendix
+
+\bibliography{thesis}
+\bibliographystyle{chicago}
+
+\cleardoublepage
+%\fancyhead[LE,RO]{\bfseries\thepage}
+%\fancyhead[RE]{\bfseries Statement of Contributions}
+%\fancyhead[LO]{\bfseries Statement of Contributions}
+%\markboth{Statement of Contributions}{Statement of Contributions}
+\phantomsection
+\addcontentsline{toc}{chapter}{Statement of Contributions}
+\subfile{chapters/contributions}
+
+
+\cleardoublepage
+%\fancyhead[LE,RO]{\bfseries\thepage}
+%\fancyhead[RE]{\bfseries Acknowledgements}
+%\fancyhead[LO]{\bfseries Acknowledgements}
+%\markboth{Acknowledgements}{Acknowledgements}
+\phantomsection
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\subfile{chapters/acknowledgements}
+
+
+%\appendix
+%\chapter*{Acknowledgements}
+%%\addcontentsline{toc}{chapter}
+
+\end{document}

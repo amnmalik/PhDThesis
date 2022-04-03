@@ -1,0 +1,31 @@
+%%%%% Chapter 5
+\documentclass[../thesis.tex]{subfiles}
+\begin{document}
+
+\chapter[Just transition opportunities for coal-bearing states in India ]{\textit{Just transition opportunities for coal-bearing states in India}\raisebox{.3\baselineskip}{\normalsize\footnotemark}
+\footnotetext{ published in \emph{Environmental Research Letters} as
+  Malik, A., and Bertram, C. (2022). Solar energy as an early just transition opportunity for coal-bearing states in India. Environmental Research Letters, 17(3). https://doi.org/10.1088/1748-9326/ac5194}}
+
+\label{ch:ERLPaper2}
+
+\bigskip {\raggedleft \em
+Aman Malik\\
+Christoph Bertram\\
+}
+\cleardoublepage
+\includepdf[scale=0.92,offset= 0 -3mm,
+  pages=2-,fitpaper=false, 
+%  addtotoc={%   
+%  2, subsection,    2, Introduction,		             p3s2,
+%  3, subsection,    2, Methods,		 p3s2,
+%  5, subsection,    2, Results,	 p3s3,
+%  10, subsection,   2, Discussion,  p3s4,
+%  12, subsection,   2, Conclusions,p3r}
+   pagecommand={\thispagestyle{fancy}}]{pdfs/malik2022_erl2.pdf}
+\includepdf[pages=-, 
+%addtotoc={%   
+%  1, subsection,    2, Supplementary	Information,		                        p3sm},
+  pagecommand={}]{pdfs/malik2022_erl2_si.pdf}
+
+\clearpage
+\end{document}
