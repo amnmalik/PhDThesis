@@ -3,7 +3,7 @@ Contains code and figures to my PhD thesis titled "Barriers to power sector deca
 Thesis submitted to Technical University of Berlin, November 2021
 
 ## Download
-To simply download the thesis in `.pdf`, click [here](thesisUpdated20220401-red.pdf). Note that the uploaded pdf is compressed to save space. To see it in high quality, you must download and run the latex code. To see and run the code online, see the thesis on [Overleaf](https://www.overleaf.com/read/nyqmtrgpkcdq). To see the core chapters of the thesis, based on published research articles, click [here](chapters/pdfs).
+To simply download the thesis (as submitted) in `.pdf`, click [here](thesisUpdated20220401-red.pdf). Note that the uploaded pdf is compressed to save space. To see it in high quality, you must download and run the latex code. To see and run the code online, see the thesis on [Overleaf](https://www.overleaf.com/read/nyqmtrgpkcdq). To see the core chapters of the thesis, based on published research articles, click [here](chapters/pdfs). To download directly from the online repository of doctoral disserations of TU Berlin , click [here](https://depositonce.tu-berlin.de/items/25cc825f-904f-4403-a092-7d6190f92149)
 
 ## Usage
 The thesis is written in latex and uses Xelatex to make the PDF.
